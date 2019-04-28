@@ -126,7 +126,6 @@ export default class App extends React.Component{
     e.target.classList.remove("drag-down");
     this.over.classList.remove("drag-down");
 
-
     let mutableMarkersArray = this.state.markersArray;
     const from = Number(this.dragged.dataset.id);
     const to = Number(this.over.dataset.id);
@@ -149,11 +148,9 @@ export default class App extends React.Component{
       return;
     }
 
-
     const dgIndex = JSON.parse(this.dragged.dataset.item).index;
     const taIndex = JSON.parse(e.target.dataset.item).index;
     const animateName = dgIndex > taIndex ? "drag-up" : "drag-down";
-
 
     if (this.over && e.target.dataset.item !== this.over.dataset.item) {
       this.over.classList.remove("drag-up", "drag-down");
@@ -174,7 +171,6 @@ export default class App extends React.Component{
           <input ref="search" type="text" className="map__search-input"/>
           The map did not load
         </div>
-
         {markers.length > 0 ?
           <ul className="list" onDragOver={this.dragOver}>
 
