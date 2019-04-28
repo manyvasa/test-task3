@@ -11,13 +11,11 @@ module.exports = {
         use: ['babel-loader']
       },
       {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
-          }
-        ]
+        test: /\.(png|jpg|gif|svg|ttf|woff|eot)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]'
+        }
       },
       {
         test: /\.css$/,
@@ -40,7 +38,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
-  
+
   devServer: {
     contentBase: path.resolve(__dirname, './public'),
     publicPath: '/',

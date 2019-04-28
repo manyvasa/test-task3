@@ -23,20 +23,24 @@
   },
   "homepage": "https://github.com/ajiejot/reactjs-boilerplate#readme",
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.27.3",
     "file-loader": "^0.11.2",
+    "react-google-maps": "^9.4.5",
     "react-hot-loader": "^4.3.3",
+    "recompose": "^0.30.0",
     "style-loader": "^0.16.0",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.7.0",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-jsx-control-statements": "^4.0.0",
+    "babel-plugin-module-resolver": "^3.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   }
